@@ -10,6 +10,7 @@ M.create_filter_command = function()
     local menu = util.ui.create_menu("Set monokai filter", {
       "classic",
       "octagon",
+      "light",
       "pro",
       "machine",
       "ristretto",
@@ -32,6 +33,7 @@ M.create_filter_command = function()
     complete = function()
       return {
         "classic",
+        "light",
         "octagon",
         "pro",
         "machine",
